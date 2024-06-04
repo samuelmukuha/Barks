@@ -1,0 +1,341 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    background: rgba(255, 255, 224, 1);
+    font-family: "Montserrat", sans-serif;
+}
+header {
+     display: flex;
+     width: 90%;
+     justify-content: space-evenly;
+     line-height: 90px;
+     margin: auto;
+     background-color: black;
+     border-radius: 5px;
+}
+.logo {
+    text-align: center;
+    width: 90%;
+    display: flex;
+    color: white;
+}
+.logo h2 {
+    font-weight: bold;
+    font-size: 32px;
+    padding-left: 20px;
+    font-family: "Playfair Display", serif;
+}
+.logo h2:hover {
+    cursor: pointer;
+    text-decoration: underline 2px solid yellow;
+}
+#links {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+}
+#links ul li {
+    display: inline;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+#links ul a {
+    color: white;
+    font-family: "Lora", serif;
+}
+#links ul li a:hover {
+    background-color: rgba(255, 255, 0, 0.8);
+    padding: 15px;
+    border-radius: 7px;
+}
+/* end style nav section */
+/* start of image image slider */
+
+#container {
+    margin: auto;
+    width: 90%;
+    height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 20px solid rgb(173, 101, 101, 0.2);
+    box-shadow: -1px 5px 15px black;
+}
+/* area of images */
+#wrapper {
+    width: 100%;
+    display: flex;
+    animation: slide 22s infinite;
+}
+#wrapper img {
+    width: 100%;
+    height: 100vh;
+}
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+      }
+      10% {
+        transform: translateX(0);
+      }
+      20% {
+        transform: translateX(-100%);
+      }
+      30% {
+        transform: translateX(-100%);
+      }
+      40% {
+        transform: translateX(-200%);
+      }
+      50% {
+        transform: translateX(-200%);
+      }
+      60% {
+        transform: translateX(-300%);
+      }
+      70% {
+        transform: translateX(-300%);
+      }
+      80% {
+        transform: translateX(-400%);
+      }
+      90% {
+        transform: translateX(-400%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+ /* end of image slider section */
+
+ /* start description section */
+ #description {
+    display: flex;
+    overflow: hidden;
+    margin: auto;
+    width: 90%;
+    height: 800px;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+article {
+    width: 50%;
+    background: rgba(0, 0, 0, 0.1);
+}
+article h1 {
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    color: lightcoral;
+    font-size: 40px;
+    text-align: center;
+}
+article p {
+    font-family: "Raleway", sans-serif;
+    font-size: 22px;
+    color: lightcoral;
+}
+figure {
+    width: 50%;
+    background: lightcoral;
+}
+figure img {
+    width: 100%;
+    height: 800px;
+}
+/* end of description section */
+
+/* start of form section */
+#form {
+  background: white;
+  margin: auto;
+  width: 80%;
+  box-shadow: -1px 5px 15px rgb(255, 208, 55);
+  padding: 10px;
+  border-radius: 7px;
+}
+
+legend {
+  font-size: 40px;
+  color: lightcoral;
+  font-family: "Playfair Display", serif;
+}
+
+label {
+  padding: 10px;
+  font-size: 22px;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 10px;
+}
+input {
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  font-size: 18px;
+}
+#submit {
+  color: black;
+  font-size: 20px;
+  font-style: italic;
+  background: lightcoral;
+  margin-top: 10px;
+  border-radius: 20px;
+}
+#submit:hover {
+  color: black;
+  background: lightgreen;
+}
+/* end of form section */
+
+/* start of review section */
+#reviews {
+  background: rgba(0, 0, 0, 0.192);
+  margin: auto;
+  width: 90%;
+  height: 50vh;
+  display: flex;
+  border-radius: 10px;
+  box-shadow: -1px 5px 15px rgb(255, 196, 0);
+  overflow-x: auto;
+  justify-content: space-between;
+  text-align: center;
+}
+#words {
+  background: rgba(0, 0, 0, 0.26);
+  margin: auto;
+  color: yellow;
+  font-weight: bold;
+  width: 90%;
+  flex-direction: column;
+  border-radius: 10px;
+  height: fit-content;
+  text-align: center;
+  position: relative;
+  top: -90px;
+  font-family: "Indie Flower", cursive;
+  font-size: 20px;
+  cursor: pointer;
+}
+#comments {
+  width: 98%;
+  margin: auto;
+  text-align: center;
+  font-size: 22px;
+}
+#comments > h2 {
+  font-family: "Bitter", serif;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: underline 2px green;
+}
+#commentsform {
+  box-shadow: -1px 5px 15px rgb(255, 196, 0);
+  width: 80%;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.432);
+  padding: 10px;
+  border-radius: 7px;
+}
+#postcomment {
+  background-color: lightsalmon;
+  border-radius: 10px;
+}
+#commentbox {
+  width: 100%;
+}
+#postcomment:hover {
+  background-color: lightgreen;
+}
+/* end form section */
+
+/* start new app dev section */
+#newdev {
+  display: flex;
+  margin: auto;
+  width: 98%;
+  overflow: hidden;
+  cursor: pointer;
+}
+#location {
+  width: 55%;
+  background: white;
+  margin: auto;
+  height: max-content;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px black;
+}
+#todo {
+  width: 40%;
+  background: white;
+  margin: auto;
+  height: max-content;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px black;
+  padding: 10px;
+}
+#todo h2 {
+  text-align: center;
+  color: gold;
+}
+#task {
+  width: 70%;
+  border-radius: 10px;
+}
+#btn {
+  float: right;
+  width: 30%;
+  border-radius: 14px;
+}
+#tasklist {
+  text-align: center;
+  list-style: circle;
+}
+/* end of newdev section */
+
+/* start contact us section */
+#contactus {
+  width: 98%;
+  background: rgb(0, 0, 0);
+  margin: auto;
+  display: flex;
+  overflow: hidden;
+  justify-content: space-around;
+  border-radius: 10px;
+  height: max-content;
+}
+#logo {
+  display: flex;
+  text-align: center;
+  margin-top: 20px;
+}
+#logo h2 {
+  padding: 20px;
+  font-weight: bold;
+  color: white;
+  font-size: 32px;
+  font-family: "Playfair Display", serif;
+}
+#logo h2:hover {
+  cursor: pointer;
+  text-decoration: underline 2px solid yellow;
+}
+#bottomnavlink {
+  margin-top: 20px;
+}
+#bottomnavlink li{
+  padding: 4px;
+}
+#bottomnavlink li a{
+  color: white;
+  font-size: 16px;
+  margin: 4px;
+  font-style: italic;
+}
+#bottomnavlink li a:hover{
+  text-decoration: underline 2px lightcoral;
+}

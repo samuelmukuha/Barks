@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/emoji.css/dist/emoji.min.css"
+    />
+    <title>Barks</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/clipart1755845.png" alt="paw" height="70px">
+            <h2>Barks</h2>
+        </div>
+        <div id="links">
+            <nav>
+                <ul>
+                    <li><a class="active" href="#links">Home</a></li>
+                    <li><a href="#description">About</a></li>
+                    <li><a href="#form">Register</a></li>
+                    <li><a href="#feedback">Feedback</a></li>
+                    <li><a href="#contact">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- end nav section -->
+
+    <!-- start image slider -->
+    <div id="container">
+        <div id="wrapper">
+            <img src="images/1.jpg" alt="dog">
+            <img src="images/2.jpg" alt="dog">
+            <img src="images/3.jpg" alt="dog">
+            <img src="images/4.jpg" alt="dog">
+            <img src="images/4.jpg" alt="dog">
+            <img src="images/5.jpg" alt="dog">
+            <img src="images/6.jpg" alt="dog">
+            <img src="images/7.jpg" alt="dog">
+            <img src="images/8.jpg" alt="dog">
+            <img src="images/9.jpg" alt="dog">
+            <img src="images/10.jpg" alt="dog">
+            <img src="images/11.jpg" alt="dog">
+        </div>
+    </div>
+    <br><br>
+
+    <!-- end of image slider -->
+    <!-- start simple description section -->
+    <div id="description">
+        <article>
+            <h1>Barks</h1>
+            <br><br>
+            <p>
+          Dogs are amazing! <span class="ec-grin"></span>
+          Their strength and ancestral instincts make them super helpful to us.
+          They have been used since the early 1500s for hunting. These days most
+          house dogs don't hunt for food because they have a reliable source
+          which is you.
+            </p>
+            <br>
+            <p>
+                The majority of dogs are also left at home the whole day as the owners
+          have to go to work to make ends meet. This state of leaving the dog at
+          home or in a kennel is thought by many to improve the aggressiveness
+          of the dog. There is some truth to this
+          <span class="ec ec-pensive"></span> . If you were to be caged up you
+          would lose your sense of humanity and probably go crazy.
+          <span class="ec ec-zany"></span>
+          They are no different from us so dogs lose their friendly aspect over
+          time when they are caged up and their primal instincts kick in.
+            </p>
+            <br>
+            <p>
+                This is a new century newer and better methods have been discovered to
+          make the dog more aggressive without damaging its brain. Happybarks
+          employs these techniques in dog training. At our facility, we ensure
+          that all dogs receive adequate training based on their physical state.
+          We also check through all the dogs to look for any diseases that
+          affect dogs and treat them. By doing this we aid those who don't have
+          enough time to care for their dogs due to work or other reasons and
+          also anyone else who would like to better their dog's health
+          <span class="ec ec-relieved"></span>.
+            </p>
+            <br>
+        </article>
+        <figure><img src="images/6.jpg" alt="dog"></figure>
+    </div>
+    <br><br><br>
+
+    <!-- end of simple description section -->
+
+    <!-- start form section -->
+    <div id="form">
+        <h2>Register your info in the form below and we will get back to you</h2>
+        <form action="https://formspree.io/f/mdoqrdwp" method="post">
+            <fieldset>
+                <legend>Barks</legend>
+                <label for="fullName">Full Name</label>
+                <input id="fullName" type="text" placeholder="sam...." required />
+
+                <label for="phoneNumber">Phone</label>
+                <input id="phoneNumber" type="tel" required/>
+
+                <label for="email">Email</label>
+                <input name="email" id="email" type="email" required/>
+
+                <label for="dogBreed">Dog breeds</label>
+                <input name="dogBreed" type="text" id="dogBreed1">
+                <input name="dogBreed" type="text" id="dogBreed2">
+                <input name="dogBreed" type="text" id="dogBreed3">
+                <input name="dogBreed" type="text" id="dogBreed4">
+
+                <label for="loc">Paste google maps location</label>
+                <input name="location" id="loc">
+
+                <label for="date">sunday</label>
+                <input name="date" type="checkbox" value="sunday">
+                <label for="date">Monday</label>
+                <input name="date" type="checkbox" value="Monday">
+                <label for="date">Tuesday</label>
+                <input name="date" type="checkbox" value="Tuesday">
+                <label for="date">wednesday</label>
+                <input name="date" type="checkbox" value="wednesday">
+                <label for="date">Thursday</label>
+                <input name="date" type="checkbox" value="Thursday">
+                <label for="date">Friday</label>
+                <input name="date" type="checkbox" value="Friday">
+                <label for="date">Saturday</label>
+                <input name="date" type="checkbox" value="Saturday">
+
+                <label for="dropdown">Payement method</label>
+                <select name="Payement" id="dropdown">
+                  <option value="mpesa">Mpesa</option>
+                  <option value="cash">Cash</option>
+                  <option value="paypal">PayPal</option>
+                  <option value="credit">Card</option>
+                  <option value="bitcoin">Bitcoin</option>
+                </select>
+                
+                <input id="submit" type="submit" value="submit">
+            </fieldset>
+        </form>
+    </div>
+    <br><br>
+
+    <!-- end form section -->
+
+    <!-- start review section -->
+    <div id="feedback">
+        <div id="comments">
+            <h2>Don't believe us? We have reviews check them out</h2>
+        </div>
+
+        <div id="reviews"></div>
+        <div id="words">
+            <p>John Doe:happy always when using this app</p>
+            <p>Sammy: The service is really amazing.</p>
+            <p>Anonymous12:They are just good at this</p>
+        </div>
+
+        <form id="commentsform">
+         <label for="commentbox"
+            > <span class="ec ec-wave"></span>
+            Join the community and share Your experience
+            <span class="ec ec-speech-balloon"></span>
+            </label>
+            <input 
+                type="text"
+                aria-label="Add a comment…"
+                placeholder="Add a comment…"
+                id="commentbox"
+                autocomplete="off"
+                autocorrect="off"
+            />
+            <input type="submit" id="postcomment"/>
+        </form>
+     </div>
+    <br><br>
+    <!-- end of review section -->
+
+    <!-- start new app dev section -->
+    <div id="newdev">
+        <div id="location">
+            <h3><span class="ec ec-partying"></span>Our doggytask is here</h3>
+            <h4>
+                <span class="ec ec-memo"></span>instructions<span
+                class="ec ec-smiling-face-with-three-hearts"
+                ></span>
+            </h4><br>
+            <ul>
+                <li>
+                 1. Click on completion<span class="ec ec-white-check-mark"></span>   
+                </li><br>
+                <li>
+                 2. Double click to delete.<span class="ec ec-wastebasket"></span>
+                </li>
+            </ul>
+            <br><br>
+            <h2>You are welcome to pop up at our office.</h2>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d720.8753867732534!2d36.797560725587275!3d-1.2740346792758666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f11aeda9228c7%3A0x678f26d0403a1b3b!2sqrozil!5e1!3m2!1sen!2ske!4v1662100846359!5m2!1sen!2ske" 
+              width="400px"
+              height="250px"
+              style="border: 3px dotted lightsalmon"
+              allowfullscreen
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe><br>
+            <p>
+                We are located in Parklands.Pop us, come give us a visit and also get
+                more information from us. We are open all days of the week and we
+                accomodate all breeds of animals.
+                <span class="ec ec-grin"></span>
+            </p>
+        </div>
+
+        <div id="todo">
+            <h2>Try our dogytask app<span class="ec ec-nerd-face"></span></h2>
+            <form id="taskform">
+                <input type="text" id="task" placeholder="treat my dog to">
+                <input id="btn" type="submit" value="Save">
+            </form>
+            <ul id="tasklist"></ul>
+        </div>
+    </div>
+    <br><br>
+    <!-- end new app dev section -->
+
+    <!-- start footer -->
+    <footer id="contactus">
+        <div id="logo">
+            <img src="images/clipart1755845.png" alt="paw" height="70px">
+            <h2>Barks</h2>
+        </div>
+        <div id="bottomnavlink">
+            <ul>
+                <li>
+                    <a href="#links">
+                        <img 
+                         src="images/house.png"
+                         alt="Home icon"
+                         height="25px">
+                         Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#description">
+                        <img height="25px" src="images/info.png" alt="Info icon">
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a href="#form">
+                        <img
+                        height="25px" 
+                        src="images/membership.png"
+                        alt="Register logo"
+                        >Register
+                    </a>
+                </li>
+                <li>
+                    <a href="feedback">
+                        <img src="images/review.png"
+                         alt="Feedack icon"
+                         height="25px">Feedack
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div id="bottomnavlink">
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/SamKush72/">
+                        <img
+                        height="25px"
+                         src="images/instagram.png"
+                          alt="instagramlogo">Instagram
+                    </a>
+                </li>
+                <li>
+                    <a href="https://web.facebook.com/WeRateDogs/?_rdc=1&_rdr">
+                        <img
+                        height="25px" 
+                        src="images/facebook.png" 
+                        alt="fblogo">Facebook
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/@SamKush72">
+                        <img
+                        height="25px" 
+                        src="images/twitter.png" 
+                        alt="twitterlogo">Twitter
+                    </a>
+                </li>
+                <li>
+                    <a href="https://mail.google.com/mail/u/0/#inbox?compose=new">
+                        <img 
+                        height="25px"
+                        src="images/gmail.png" 
+                        alt="">Email us
+                    </a>
+                </li>
+            </ul>
+        </div>    
+    </footer>
+    <!-- link javascript -->
+    <script src="index.js"></script>
+</body>
+</html>
